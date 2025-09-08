@@ -15,7 +15,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 13px;
+  font-size: clamp(10px, 0.9vw, 18px);
+  /* font-size: 13px; */
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 500;
   /* Weights: 500, 600 */
@@ -43,7 +44,7 @@ body {
 
 .testimonial {
   /* general class for all reivews */
-  background-color: aqua;
+  /* background-color: aqua; */
   padding: 2.5rem;
   margin: 1.25rem;
   border-radius: 0.75rem;
@@ -198,4 +199,35 @@ body {
 
 .kira-whittle .sub-review {
   color: var(--Grey-400);
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: var(--Grey-100);
+  }
+
+  .main-container {
+    /* background-color: coral; */
+    width: 90%;
+    margin: 4rem 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial {
+    /* general class for all reivews */
+    padding: 2.5rem;
+    margin: 1.25rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    box-shadow: 3rem 3rem 2.5rem var(--Grey-200);
+  }
 }
