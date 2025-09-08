@@ -48,7 +48,7 @@ body {
   border-radius: 0.75rem;
 }
 
-.reviwer-details {
+.reviewer-details {
   display: flex;
   gap: 1rem;
   justify-content: flex-start;
@@ -73,11 +73,14 @@ body {
   font-weight: 600;
   margin-top: 1rem;
   font-size: 1.4rem;
-  line-height: 1.35;
+  line-height: 1.5;
 }
 
 .sub-review {
   margin-top: 1rem;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .daniel-clifford {
@@ -89,14 +92,28 @@ body {
 
 .quote-img {
   position: absolute;
+  top: 0;
+  filter: brightness(110%);
+  right: 12.5%;
+  z-index: 0;
 }
 
-.daniel-clifford .sub-review {
-  color: var(--Grey-200);
+.daniel-clifford .main-review {
+  position: relative;
+  z-index: 1;
+}
+
+.daniel-clifford .reviewer-name {
+  color: var(--Grey-100);
 }
 
 .daniel-clifford .graduate {
   color: var(--Grey-200);
+}
+
+.daniel-clifford .sub-review {
+  color: var(--Grey-200);
+  font-weight: 600;
 }
 
 .jonathan-walters {
@@ -105,8 +122,31 @@ body {
   color: var(--White);
 }
 
+.jonathan-walters .reviewer-name {
+  color: var(--Grey-100);
+}
+
+.jonathan-walters .graduate {
+  color: var(--Grey-200);
+}
+
+.jonathan-walters .sub-review {
+  color: var(--Grey-200);
+  font-weight: 600;
+}
+
 .jeanette-harmon {
   grid-area: jh;
+  background-color: var(--White);
+  color: var(--Grey-500);
+}
+
+.jeanette-harmon .graduate {
+  color: var(--Grey-400);
+}
+
+.jeanette-harmon .sub-review {
+  color: var(--Grey-400);
 }
 
 .patrick-abrams {
