@@ -11,12 +11,108 @@
   --Black: hsl(0, 0%, 7%);
 }
 
-html {
-  font-size: 13px;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  /* Weights: 500, 600 */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container {
+  background-color: coral;
+  width: 75%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "dc dc jw kw"
+    "jh pa pa kw";
+}
+
+.testimonial {
+  /* general class for all reivews */
+  background-color: aqua;
+  padding: 2.5rem;
+  margin: 1.25rem;
+  border-radius: 0.75rem;
+}
+
+.reviwer-details {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 2rem;
+  height: auto;
+}
+
+.reviewer-name {
+  font-size: 1rem;
+}
+
+.graduate {
+  font-size: 0.9rem;
+}
+
+.main-review {
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.35;
+}
+
+.sub-review {
+  margin-top: 1rem;
+}
+
+.daniel-clifford {
+  grid-area: dc;
+  background-color: var(--Purple-500);
+  color: var(--Grey-100);
+  position: relative;
+}
+
+.quote-img {
+  position: absolute;
+}
+
+.daniel-clifford .sub-review {
+  color: var(--Grey-200);
+}
+
+.daniel-clifford .graduate {
+  color: var(--Grey-200);
+}
+
+.jonathan-walters {
+  grid-area: jw;
+  background-color: var(--Grey-500);
+  color: var(--White);
+}
+
+.jeanette-harmon {
+  grid-area: jh;
+}
+
+.patrick-abrams {
+  grid-area: pa;
+}
+
+.kira-whittle {
+  grid-area: kw;
 }
